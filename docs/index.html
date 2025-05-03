@@ -24,11 +24,24 @@
         }
 
         .content {
-            margin: auto;
-            padding-left: 2em;
-            padding-right: 2em;
-            padding-top: 0;
-            max-width: 70%;
+        margin: auto;
+        padding: 0 2em;
+        width: 700px; /* Match your chart width */
+        max-width: 90%; /* Allow responsiveness */
+        }
+
+        #ai2html-container {
+        width: 700px; /* Explicitly match chart width */
+        max-width: 100%;
+        margin: 2em auto;
+        }
+
+        /* For mobile (medium artboard) */
+        @media (max-width: 699px) {
+        .content, #ai2html-container {
+            width: 100%;
+            padding: 0 1em;
+        }
         }
 
         .header {
@@ -82,29 +95,6 @@
             background: #fff880;
         }
 
-        .chart-content {
-            margin: 2em auto;
-            width: 100%;
-            overflow: visible; /* Allows absolute positioning to work */
-        }
-        
-        /* Reset ai2html container positioning */
-        #g-template-box {
-            position: relative;
-            margin: 0 auto;
-        }
-        
-        /* Mobile adjustments */
-        @media (max-width: 699px) {
-            .chart-content {
-            margin: 1em auto;
-            }
-            
-            /* Optional: Scale down text on mobile */
-            .g-aiPointText p {
-            font-size: 12px !important;
-            }
-        }
     </style>
 
     </head>
