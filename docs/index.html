@@ -77,46 +77,38 @@
             background: #fff880;
         }
 
-        .chart-wrapper {
-        width: 100%;
-        overflow: hidden;
-        margin: 2em 0;
+        .chart-container {
+        position: relative;
+        margin: 2em auto;
+        max-width: 700px; /* Match your full-size width */
         }
-        
-        /* Force responsive scaling */
-        #g-template-box {
-        max-width: 100%;
-        height: auto !important;
-        }
-        
-        /* Full-size version scaling */
-        #g-template-full {
-        max-width: 100%;
-        height: auto !important;
-        }
-        #g-template-full-img {
-        width: 100% !important;
-        height: auto !important;
-        position: relative !important;
-        }
-        
-        /* Medium-size version scaling */
+
+        /* Hide both versions by default */
+        #g-template-full,
         #g-template-medium {
-        max-width: 100%;
-        height: auto !important;
+        display: none;
         }
-        #g-template-medium-img {
+
+        /* Show full version on desktop */
+        @media (min-width: 700px) {
+        #g-template-full {
+            display: block;
+            width: 100%;
+        }
+        }
+
+        /* Show medium version on mobile */
+        @media (max-width: 699px) {
+        #g-template-medium {
+            display: block;
+            width: 100%;
+        }
+        }
+
+        /* Force responsive images */
+        .g-aiImg {
         width: 100% !important;
         height: auto !important;
-        position: relative !important;
-        }
-        
-        /* Responsive text adjustment */
-        @media (max-width: 600px) {
-        .g-aiPointText {
-            transform: scale(0.85);
-            transform-origin: left top;
-        }
         }
     </style>
 
