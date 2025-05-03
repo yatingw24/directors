@@ -810,7 +810,7 @@
         <p>Women are celebrated when they conform to expectations. Until women can fail as freely as men - flopping at the box office, pivoting between genres, or directing a $200 million bomb without derailing their careers - the golden era remains a gilded cage. The system isn’t just slow to change; it’s designed to keep women in their place. And for now, that place is still narrowly defined. </p>
 
         <div class="g-note">
-            <div class='g-read-more g-opened'>
+            <div class='g-read-more'>
                 <h3>Methodology</h3>
                 <div class="g-moreinfo-button-bkg">
                     <div class="g-moreinfo-icon">
@@ -824,7 +824,76 @@
                 <p class="“”">Using public records requests, Grist received raw datasets of excess emissions events reported between 2001 and 2022 from relevant state agencies. To ensure disparate pollution events were comparable in terms of their scale, we used an EPA density dataset to convert all reported emissions events to pounds. Next, we computed descriptive statistics, including cumulative emissions magnitude and a three-year moving average of the releases.</p>
                 <p class="“”">To assess the impact of extreme weather on the events in question, we took two approaches. First, we digitally processed comments by facilities for each event, automatically tagging instances in which companies explicitly noted that extreme weather events (like hurricanes and floods) were responsible. Second, by spatially merging in a National Oceanic and Atmospheric Administration dataset of hurricane and tropical-storm trajectories from the same time period, we tagged excess emissions events that were within one week (±3 days) and 25 miles of a given storm. Our highest-confidence weather-related events were those that fell within this window and were flagged as weather-related by facilities.</p>
                 <p class="“”">With this dataset in hand, we built a series of statistical models to estimate the marginal effects of extreme weather on the magnitude of excess emissions events. Specifically, by fixing effects to the facility level and to the year of release, we were able to more accurately model the average effects of meteorological variables (wind speed, cumulative precipitation, and presence of extreme weather) on events across facilities, all else equal. We built separate models for the Permian Basin and the Gulf Coast, as well as combined statewide models that controlled for the Permian’s unique characteristics by including a given facility’s location in a Permian county as an indicator variable.</p>
-                </div>
+            </div>
+            <style>
+                /********* note ********/
+                .g-note{
+                  background: #fff;
+                  margin-top: 60px;
+                  padding: 20px 40px;
+                }
+                .g-note h3{
+                  font-size: 18px;
+                }
+                .g-note p{
+                  font-size: 16px;
+                }
+                /*******read more **********/
+                .g-more-content{
+                  height:0;
+                  overflow:hidden;
+                }
+                .g-read-more{
+                  position: relative;
+                  -webkit-overflow-scrolling: touch;
+                  cursor:pointer;
+                }
+                .g-read-more{
+                  position: relative;
+                  -webkit-overflow-scrolling: touch;
+                  cursor:pointer;
+                }
+                .g-moreinfo-button-bkg {
+                  position: static;
+                }
+                .g-moreinfo-button-bkg {
+                    width: 25px;
+                    height: 25px;
+                    background: #f0f0f0;
+                    border-radius: 50%;
+                    position: relative;
+                    left: 50%;
+                    transform:translateX(-50%);
+                    transition: background .5s;
+                  }
+                  .g-moreinfo-icon {
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform-origin: 50% 50% ;
+                    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+                    transition: transform .5s;
+                  }
+                  .g-read-more.g-opened .g-moreinfo-icon {
+                     transform: translateX(-50%) translateY(-50%) rotate(0deg);
+                  }
+                   @media screen and (min-width: 1024px){
+                    
+                    .g-note h3{
+                      font-size: 24px;
+                    }
+                    .g-note p{
+                      font-size: 18px;
+                    }
+                  }
+                
+                .grist-read-more-expand-wrapper.grist-read-more-expanded {
+                  height: fit-content !important;
+                }
+                </style>
     </div>
     
 
