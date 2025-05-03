@@ -77,13 +77,46 @@
             background: #fff880;
         }
 
-        @media (min-width: 490px) {
-        #g-template-full { display: block; }
-        #g-template-medium { display: none; }
+        .chart-wrapper {
+        width: 100%;
+        overflow: hidden;
+        margin: 2em 0;
         }
-        @media (max-width: 489px) {
-        #g-template-full { display: none; }
-        #g-template-medium { display: block; }
+        
+        /* Force responsive scaling */
+        #g-template-box {
+        max-width: 100%;
+        height: auto !important;
+        }
+        
+        /* Full-size version scaling */
+        #g-template-full {
+        max-width: 100%;
+        height: auto !important;
+        }
+        #g-template-full-img {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        }
+        
+        /* Medium-size version scaling */
+        #g-template-medium {
+        max-width: 100%;
+        height: auto !important;
+        }
+        #g-template-medium-img {
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        }
+        
+        /* Responsive text adjustment */
+        @media (max-width: 600px) {
+        .g-aiPointText {
+            transform: scale(0.85);
+            transform-origin: left top;
+        }
         }
     </style>
 
