@@ -909,24 +909,23 @@
                         // Get the content div that follows the clicked element
                         const content = element.nextElementSibling;
                         
-                        // Toggle the content visibility
-                        if (content.style.height === 'auto') {
+                        // If content is already expanded, collapse it
+                        if (content.style.height === 'auto' || content.classList.contains('expanded')) {
+                            content.style.height = content.scrollHeight + 'px';
+                            // Force reflow
+                            content.offsetHeight;
                             content.style.height = '0';
-                        } else {
-                            // First set height to auto to measure the full height
-                            content.style.height = 'auto';
-                            const fullHeight = content.scrollHeight + 'px';
-                            // Then set height to 0 immediately so we can animate to full height
-                            content.style.height = '0';
-                            // Use setTimeout to allow the browser to register the height change
-                            setTimeout(() => {
-                                content.style.height = fullHeight;
-                            }, 10);
+                            content.classList.remove('expanded');
+                        } 
+                        // If content is collapsed, expand it
+                        else {
+                            content.style.height = content.scrollHeight + 'px';
+                            content.classList.add('expanded');
                             
-                            // When transitioning back to 0, we need to handle that after the transition completes
+                            // After transition completes, set to auto so content can resize if needed
                             content.addEventListener('transitionend', function handler() {
-                                if (content.style.height === '0px') {
-                                    content.style.height = '';
+                                if (content.classList.contains('expanded')) {
+                                    content.style.height = 'auto';
                                 }
                                 content.removeEventListener('transitionend', handler);
                             });
