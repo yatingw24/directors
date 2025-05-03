@@ -76,40 +76,35 @@
             font-family: 'Courier New', monospace;
             background: #fff880;
         }
-        /* Fix for squeezed PNG */
+        
         #ai2html-container {
-        width: 100% !important; /* Allow container to expand */
-        max-width: 700px;      /* Match your artboard width */
+        width: 100% !important;
+        max-width: 700px; /* Match your artboard */
+        margin: 0 auto;
         }
 
-        /* Ensure images scale properly */
+        /* Force responsive images */
         .g-aiImg {
         width: 100% !important;
         height: auto !important; /* Prevent squishing */
-        display: block;
         }
 
-        /* Fix aspect ratio for full-size artboard */
-        #g-template-full {
-        aspect-ratio: 700/425; /* Width/Height of your full-size PNG */
-        }
-
-        /* Fix aspect ratio for medium artboard */
+        /* Override inline artboard dimensions */
+        #g-template-full,
         #g-template-medium {
-        aspect-ratio: 490/350; /* Width/Height of your medium PNG */
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 700/425; /* Full-size ratio */
+        }
+        #g-template-medium {
+        aspect-ratio: 490/350; /* Medium-size ratio */
         }
 
-        /* Mobile responsiveness */
+        /* Mobile switch */
         @media (max-width: 699px) {
-        #g-template-full {
-            display: none !important;
+        #g-template-full { display: none !important; }
+        #g-template-medium { display: block !important; }
         }
-        #g-template-medium {
-            display: block !important;
-            max-width: 100%;
-        }
-        }
-
     </style>
 
     </head>
