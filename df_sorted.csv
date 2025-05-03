@@ -1,0 +1,86 @@
+Era,Broad_Genre,Count,Gender
+before 2000,Other,54,Female
+before 2000,Comedy,23,Female
+before 2000,Documentary,16,Female
+before 2000,Romance,15,Female
+before 2000,Thriller,11,Female
+before 2000,Sci-Fi,9,Female
+before 2000,Action,7,Female
+before 2000,Psychological Drama,7,Female
+before 2000,Coming-of-Age,5,Female
+before 2000,Crime,4,Female
+before 2000,History,4,Female
+before 2000,Sports,3,Female
+before 2000,War,3,Female
+before 2000,Horror,2,Female
+before 2000,Animation,1,Female
+before 2000,Family,0,Female
+before 2000,Mystery,0,Female
+2000-2005,Other,18,Female
+2000-2005,Thriller,6,Female
+2000-2005,Comedy,5,Female
+2000-2005,Coming-of-Age,5,Female
+2000-2005,Romance,5,Female
+2000-2005,Sci-Fi,5,Female
+2000-2005,Documentary,4,Female
+2000-2005,Horror,3,Female
+2000-2005,Action,2,Female
+2000-2005,Family,1,Female
+2000-2005,Psychological Drama,1,Female
+2000-2005,War,1,Female
+2000-2005,Animation,0,Female
+2000-2005,Crime,0,Female
+2000-2005,History,0,Female
+2000-2005,Mystery,0,Female
+2000-2005,Sports,0,Female
+2006-2010,Other,14,Female
+2006-2010,Coming-of-Age,5,Female
+2006-2010,Documentary,5,Female
+2006-2010,Thriller,3,Female
+2006-2010,Mystery,2,Female
+2006-2010,Romance,2,Female
+2006-2010,War,2,Female
+2006-2010,History,1,Female
+2006-2010,Psychological Drama,1,Female
+2006-2010,Action,0,Female
+2006-2010,Animation,0,Female
+2006-2010,Comedy,0,Female
+2006-2010,Crime,0,Female
+2006-2010,Family,0,Female
+2006-2010,Horror,0,Female
+2006-2010,Sci-Fi,0,Female
+2006-2010,Sports,0,Female
+2011-2015,Other,19,Female
+2011-2015,Thriller,8,Female
+2011-2015,Horror,6,Female
+2011-2015,Comedy,5,Female
+2011-2015,Coming-of-Age,5,Female
+2011-2015,Documentary,4,Female
+2011-2015,Romance,4,Female
+2011-2015,Mystery,3,Female
+2011-2015,Action,2,Female
+2011-2015,History,2,Female
+2011-2015,Psychological Drama,1,Female
+2011-2015,Animation,0,Female
+2011-2015,Crime,0,Female
+2011-2015,Family,0,Female
+2011-2015,Sci-Fi,0,Female
+2011-2015,Sports,0,Female
+2011-2015,War,0,Female
+2016-2020,Other,17,Female
+2016-2020,Comedy,5,Female
+2016-2020,Coming-of-Age,5,Female
+2016-2020,Romance,5,Female
+2016-2020,Thriller,4,Female
+2016-2020,Documentary,3,Female
+2016-2020,Action,2,Female
+2016-2020,History,2,Female
+2016-2020,Horror,2,Female
+2016-2020,Mystery,2,Female
+2016-2020,Sci-Fi,2,Female
+2016-2020,Psychological Drama,1,Female
+2016-2020,Animation,0,Female
+2016-2020,Crime,0,Female
+2016-2020,Family,0,Female
+2016-2020,Sports,0,Female
+2016-2020,War,0,Female
