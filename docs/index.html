@@ -18,11 +18,6 @@
             text-rendering: optimizeLegibility;
         }
 
-        #ai2html-container {
-        margin: 20px auto;
-        overflow: hidden;
-        }
-
         .content {
         margin: auto;
         padding: 0 2em;
@@ -30,19 +25,6 @@
         max-width: 90%; /* Allow responsiveness */
         }
 
-        #ai2html-container {
-        width: 700px; /* Explicitly match chart width */
-        max-width: 100%;
-        margin: 2em auto;
-        }
-
-        /* For mobile (medium artboard) */
-        @media (max-width: 699px) {
-        .content, #ai2html-container {
-            width: 100%;
-            padding: 0 1em;
-        }
-        }
 
         .header {
             padding: 3em 0;
@@ -94,42 +76,38 @@
             font-family: 'Courier New', monospace;
             background: #fff880;
         }
-        #g-template-box {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
+        /* Fix for squeezed PNG */
+        #ai2html-container {
+        width: 100% !important; /* Allow container to expand */
+        max-width: 700px;      /* Match your artboard width */
         }
-            
 
+        /* Ensure images scale properly */
         .g-aiImg {
-            width: 100% !important;
-            height: auto !important;
-            position: relative !important;
+        width: 100% !important;
+        height: auto !important; /* Prevent squishing */
+        display: block;
         }
-            
-        #g-template-full {
-            aspect-ratio: 700/425; /* Width/Height of your full-size PNG */
-        }
-            
-        #g-template-medium {
-            aspect-ratio: 490/350; /* Width/Height of your medium PNG */
-        }
-            
 
+        /* Fix aspect ratio for full-size artboard */
+        #g-template-full {
+        aspect-ratio: 700/425; /* Width/Height of your full-size PNG */
+        }
+
+        /* Fix aspect ratio for medium artboard */
+        #g-template-medium {
+        aspect-ratio: 490/350; /* Width/Height of your medium PNG */
+        }
+
+        /* Mobile responsiveness */
         @media (max-width: 699px) {
-            #g-template-full {
-                display: none !important;
+        #g-template-full {
+            display: none !important;
         }
-            #g-template-medium {
-                display: block !important;
-                max-width: 100%;
-            }
+        #g-template-medium {
+            display: block !important;
+            max-width: 100%;
         }
-            
-        @media (min-width: 700px) {
-            #g-template-medium {
-                display: none !important;
-            }
         }
 
     </style>
