@@ -77,42 +77,13 @@
             background: #fff880;
         }
 
-        /* margin on mobile */
-        @media (max-width: 640px) {
-            body {
-                font-size: 18px;
-            }
-            .content {
-                padding-left: 0.5em;
-                padding-right: 0.5em;
-            }
+        @media (min-width: 490px) {
+        #g-template-full { display: block; }
+        #g-template-medium { display: none; }
         }
-
-
-        /* Add these to your existing styles */
-        .chart-container {
-        margin: 40px auto;       /* Vertical spacing */
-        max-width: 700px;        /* Matches your chart width */
-        text-align: center;      /* Centers the chart */
-        }
-
-        /* Make ai2html responsive */
-        .ai2html {
-        display: block;
-        margin: 0 auto;
-        }
-
-        /* Mobile adjustments */
-        @media (max-width: 700px) {
-        .chart-container {
-            width: 100%;
-            padding: 0 10px;
-        }
-        
-        #g-template-full-img {
-            width: 100%;
-            height: auto;
-        }
+        @media (max-width: 489px) {
+        #g-template-full { display: none; }
+        #g-template-medium { display: block; }
         }
     </style>
 
@@ -133,7 +104,7 @@
         
     </div>
 
-    <div class="chart-container"></div>
+    <div class="chart-container">
 
         <style media="screen,print">
             #g-template-box ,
