@@ -94,6 +94,43 @@
             font-family: 'Courier New', monospace;
             background: #fff880;
         }
+        #g-template-box {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+            
+
+        .g-aiImg {
+            width: 100% !important;
+            height: auto !important;
+            position: relative !important;
+        }
+            
+        #g-template-full {
+            aspect-ratio: 700/425; /* Width/Height of your full-size PNG */
+        }
+            
+        #g-template-medium {
+            aspect-ratio: 490/350; /* Width/Height of your medium PNG */
+        }
+            
+
+        @media (max-width: 699px) {
+            #g-template-full {
+                display: none !important;
+        }
+            #g-template-medium {
+                display: block !important;
+                max-width: 100%;
+            }
+        }
+            
+        @media (min-width: 700px) {
+            #g-template-medium {
+                display: none !important;
+            }
+        }
 
     </style>
 
