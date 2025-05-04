@@ -1,7 +1,6 @@
 # Can Women Make Hollywood Blockbusters? 
 ## A data analysis on gender disparity among female- and male-directed films
 
-
 Here is the shortcut to my [article](https://yatingw24.github.io/directors)
 
 Data:
