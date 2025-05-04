@@ -38,6 +38,17 @@ Data:
  - `ai2html-output-bar`: responsive bar charts. 
 
 ### Data Cleaning and Analysis
+1. Comparison of critical reception between female- and male-directed films.
+- scraping: titles, directors, and publication years from two BBC lists;
+- merging: with IMDb’s film metadata, collecting hyperlinks, ratings, award wins, nominations, and genre
+- statistical test: by running a linear regression, I found a weak positive correlation between the number of awards won by a film and its rating.
+- analyzing gender difference in genre tags: by mapping each individual or niche genre tag to a broader category and calculating the share of a certain genre with each list, I aim to understand what type of stories female vs. male directors dominate. 
+
+2. Comparison of box office performance between female- and male-directed films.
+- scraping: titles, directors, and publication years from two BBC lists;
+- merging: with Box Office Mojo's metadata, collecting the worldwide gross revenue
+- visualizing distribution: with a bee swarm chart, it is easier to see the gender gap in box office and the outliers. 
+
 
 ### Liminations & Potential Improvements
 
