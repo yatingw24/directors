@@ -22,20 +22,19 @@ Data:
 ### A Break Down of Files:
 1. notebooks:
 
- - `imdb_scraping.ipynb`: 
-
- - `Analysis.ipynb`: the jupyter notebook where I did my analysis on pork imported to China market.
-
- - `mojo.ipynb`: the curated dataset after my categorization of majors into four disciplines - Business, Science, Social Science and Humanities. 
+ - `scraping.ipynb`: data scraping on two BBC lists of films and merging with IMDb hyperlinks.
+  - `mojo.ipynb`: merging two BBC lists with financial records from Box Office Mojo.
+ - `Analysis.ipynb`: data analyses on awards/nominations, ratings, and the financials. 
 
 2. spreadsheets:
- - `offals_us.csv`: total amount in USD of pork offals exported to global trader parnters.
-  - `treemap.csv`: a spreadsheet which eventually presented through a treemap that shows the total number of doctoral enrollments in 2024 by discipline. 
- - `phd_stipends.csv`: the original dataset that contains all financial information about nationalwide stipends across discipines. 
- - static_imgs: charts and graphics you find in my article.
-  - `privater.csv` and `public.csv`: data about English PhD stipends in public universities and private universities. 
+ - `boxoff.csv`: worldwide box office for each film. 
+ - `feamles_list_bbc.csv`: best films directed by women filmmakers and their rating, nominations, award and genres. 
+ - `genre_share.csv`: the share of each genre within each gender's list. 
+ - `list_all_bbc.csv`: best films directed by male filmmakers and their rating, nominations, award and genres. 
+ 
 
 3. charts/graphics:
- - 
+ - `ai2html-output`: responsive bee swarm charts.
+ - `ai2html-output-bar`: responsive bar charts. 
 
 
