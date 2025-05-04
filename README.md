@@ -23,7 +23,7 @@ Data:
 1. notebooks:
 
  - `scraping.ipynb`: data scraping on two BBC lists of films and merging with IMDb hyperlinks.
-  - `mojo.ipynb`: merging two BBC lists with financial records from Box Office Mojo.
+ - `mojo.ipynb`: merging two BBC lists with financial records from Box Office Mojo.
  - `Analysis.ipynb`: data analyses on awards/nominations, ratings, and the financials. 
 
 2. spreadsheets:
@@ -36,5 +36,13 @@ Data:
 3. charts/graphics:
  - `ai2html-output`: responsive bee swarm charts.
  - `ai2html-output-bar`: responsive bar charts. 
+
+### Data Cleaning and Analysis
+
+### Liminations & Potential Improvements
+
+
+
+
 
 
