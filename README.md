@@ -15,6 +15,7 @@ Data:
 ### Tech Stack sed:
  - `python - pandas`
  - `Datawrapper`
+ - `RAWGraph`
  - `JavaScript`
  - `R`
  - `ai2html`
@@ -38,19 +39,22 @@ Data:
  - `ai2html-output-bar`: responsive bar charts. 
 
 ### Data Cleaning and Analysis
-1. Comparison of critical reception between female- and male-directed films.
+1. comparison of critical reception between female- and male-directed films.
 - scraping: titles, directors, and publication years from two BBC lists;
 - merging: with IMDb’s film metadata, collecting hyperlinks, ratings, award wins, nominations, and genre
 - statistical test: by running a linear regression, I found a weak positive correlation between the number of awards won by a film and its rating.
 - analyzing gender difference in genre tags: by mapping each individual or niche genre tag to a broader category and calculating the share of a certain genre with each list, I aim to understand what type of stories female vs. male directors dominate. 
 
-2. Comparison of box office performance between female- and male-directed films.
+2. comparison of box office performance between female- and male-directed films.
 - scraping: titles, directors, and publication years from two BBC lists;
 - merging: with Box Office Mojo's metadata, collecting the worldwide gross revenue
 - visualizing distribution: with a bee swarm chart, it is easier to see the gender gap in box office and the outliers. 
 
 
 ### Liminations & Potential Improvements
+1. the story webpage could adopt a scrolly style in order to make the reading experience more engaging.
+2. the data is a little outdated, only containing records up till 2020. 
+3. an analysis on the budget would add another layer to test the gender gap in director seat. 
 
 
 
