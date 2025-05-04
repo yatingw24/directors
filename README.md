@@ -21,9 +21,12 @@ Data:
 
 ### A Break Down of Files:
 1. notebooks:
-a. `imdb_scraping.ipynb`: data analysis on U.S. pork export.
-b. `Analysis.ipynb`: the jupyter notebook where I did my analysis on pork imported to China market.
-c. `mojo.ipynb`: the curated dataset after my categorization of majors into four disciplines - Business, Science, Social Science and Humanities. 
+
+ - `imdb_scraping.ipynb`: 
+
+ - `Analysis.ipynb`: the jupyter notebook where I did my analysis on pork imported to China market.
+
+ - `mojo.ipynb`: the curated dataset after my categorization of majors into four disciplines - Business, Science, Social Science and Humanities. 
 
 2. spreadsheets:
  - `offals_us.csv`: total amount in USD of pork offals exported to global trader parnters.
@@ -31,5 +34,8 @@ c. `mojo.ipynb`: the curated dataset after my categorization of majors into four
  - `phd_stipends.csv`: the original dataset that contains all financial information about nationalwide stipends across discipines. 
  - static_imgs: charts and graphics you find in my article.
   - `privater.csv` and `public.csv`: data about English PhD stipends in public universities and private universities. 
+
+3. charts/graphics:
+ - 
 
 
